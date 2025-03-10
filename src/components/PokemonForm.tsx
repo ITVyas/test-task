@@ -5,6 +5,7 @@ import PokemonModal from "./PokemonModal";
 import { useRef, useState } from "react";
 import { SubmitHandler, useForm, Controller } from 'react-hook-form';
 import { StarIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
+import lunaLogo from '../assets/logos/LunaEdgeLogo.svg';
 
 type PokemonFormFields = {
     name: string;
@@ -45,7 +46,7 @@ export default function PokemonForm() {
 
     return (
         <form className="p-4 w-fit mx-auto my-2 mt-10 border-2 border-[#4D4D4D] rounded-md bg-white shadow-md" onSubmit={handleSubmit(submitHandler)}>
-            <img src='/src/assets/logos/LunaEdgeLogo.svg' className='flex justify-self-center invert' />
+            <img src={lunaLogo} className='flex justify-self-center invert' />
 
             <TextInput register={register} registerProps={nameRegisterProps} name="name" 
                     placeholder="Enter the name..." label="Name" className="mb-2"
