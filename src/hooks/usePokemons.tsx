@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getPokemonNames } from "../api/requests";
 
 export default function usePokemons() {
-    const [pokemons, setPokemons] = useState([]);
+    const [pokemons, setPokemons] = useState<string[]>([]);
 
     useEffect(() => {
         let ignoreResult = false;
