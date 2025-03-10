@@ -1,10 +1,9 @@
-import { useState } from 'react'
+import './index.css';
+import PokemonForm from './components/PokemonForm';
 
 function App() {
   return (
-    <div>
-      <p>Welcome to Luna Edge technical interview</p>
-    </div>
+      <PokemonForm />
   )
 }
 
